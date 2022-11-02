@@ -1,0 +1,38 @@
+
+@keyframes top-left-right {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.b__Text {
+    position: relative;
+    .b__Text-container {
+        position: relative;
+        overflow: hidden;
+        p {
+            display: none;
+            margin: 0;
+            font-size: var(--text-size);
+        }
+    }
+    .show {
+        p {
+            display: block;
+            animation: top-left-right 1000ms ease;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .b__Text {
+        position: relative;
+        .b__Text-container {
+            p {
+                text-align: center;
+                font-size: var(--text-size-res);
+            }
+        }
+    }
+}

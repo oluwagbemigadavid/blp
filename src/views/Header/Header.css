@@ -1,0 +1,97 @@
+.b__Header-container {
+  display: block;
+  position: relative;
+  z-index: 7;
+}
+
+.b__Header-overlay {
+  display: none;
+}
+
+.b__Header-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.b__Header-nav-bar .b__Header-nav-bar_left .b__Header-nav-bar_left-menuToggle {
+  display: none;
+}
+.b__Header-nav-bar .b__Header-nav-bar_right-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@media screen and (max-width: 400px) {
+  .b__Header-overlay {
+    display: flex;
+    position: fixed;
+    min-width: 100vw;
+    height: 0vh;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 43, 70, 0.9);
+    transition: all 450ms;
+    z-index: 6;
+  }
+  .b__Header-nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .b__Header-nav-bar .b__Header-nav-bar_left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .b__Header-nav-bar .b__Header-nav-bar_left .b__Header-nav-bar_left-menuToggle {
+    display: block;
+  }
+  .b__Header-nav-bar .b__Header-nav-bar_right {
+    position: absolute;
+    margin-top: 10%;
+    left: 0;
+    height: 50vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .b__Header-nav-bar .b__Header-nav-bar_right .b__Header-nav-bar_right-cont {
+    width: 100%;
+    position: relative;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .b__Header-nav-bar .b__Header-nav-bar_right .show {
+    display: flex;
+    -webkit-animation: slide-in 1000ms ease;
+            animation: slide-in 1000ms ease;
+  }
+  .show-overlay {
+    height: 100vh;
+    opacity: 1;
+    transition: opacity 450ms;
+  }
+}/*# sourceMappingURL=Header.css.map */

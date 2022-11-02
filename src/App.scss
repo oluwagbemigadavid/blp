@@ -1,0 +1,32 @@
+
+@keyframes appear {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Rubik&display=swap');
+.App {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  color: hsl(229, 31%, 21%);
+  font-size: 18px;
+}
+.section__padding {
+  padding: 4rem 6rem;
+}
+    
+.section__margin {
+  margin: 4rem 6rem;
+}
+    
+@media screen and (max-width: 400px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+}

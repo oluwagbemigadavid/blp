@@ -1,0 +1,35 @@
+.b__faq-container {
+    width: 50%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .b__faq-container-heading {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        .b__Text {
+            margin: 2rem 0;
+        }
+    }
+    .b__Btn {
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .b__faq-container {
+        width: 90%;
+        margin: 5rem auto;
+        .b__faq-container-heading {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            .b__Text {
+                margin: 2rem 0;
+            }
+        }
+    }
+
+}

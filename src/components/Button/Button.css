@@ -1,0 +1,52 @@
+.b__Button-container {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.2);
+  transition: all 450ms;
+  background-color: var(--bgColor-btn);
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+.b__Button-container p {
+  padding: 0.8rem 1.5rem;
+  color: var(--color-btn);
+}
+
+.b__Button-container:hover {
+  background-color: #fff;
+  border: 3px solid var(--bgColor-btn);
+}
+.b__Button-container:hover p {
+  color: var(--bgColor-btn);
+}
+
+@media screen and (max-width: 400px) {
+  .b__Button {
+    width: 100%;
+  }
+  .b__Button-container {
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--color-none);
+    border: 2px solid #fff;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: all 450ms;
+  }
+  .b__Button-container p {
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .b__Button-container:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+  }
+  .b__Button-container:hover p {
+    color: #fff;
+  }
+}/*# sourceMappingURL=Button.css.map */

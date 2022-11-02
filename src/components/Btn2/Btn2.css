@@ -1,0 +1,43 @@
+.b__Btn2-container {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.2);
+  transition: all 450ms;
+  background-color: var(--bgColor-bt2);
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+.b__Btn2-container p {
+  padding: 0.8rem 1.5rem;
+  color: var(--color-bt2);
+}
+
+.b__Btn2-container:hover {
+  background-color: #fff;
+  border: 3px solid hsl(229deg, 31%, 21%);
+}
+.b__Btn2-container:hover p {
+  color: hsl(229deg, 31%, 21%);
+}
+
+@media screen and (max-width: 400px) {
+  .b__Btn2 {
+    width: 100%;
+  }
+  .b__Btn2-container {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: all 450ms;
+  }
+  .b__Btn2-container p {
+    padding: 0.5rem 0.7rem;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=Btn2.css.map */

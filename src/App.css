@@ -1,38 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&family=Rubik&display=swap");
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .App {
-  text-align: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Rubik", sans-serif;
+  color: hsl(229deg, 31%, 21%);
+  font-size: 18px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section__padding {
+  padding: 4rem 6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+@media screen and (max-width: 400px) {
+  .section__padding {
+    padding: 4rem 2rem;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .section__margin {
+    margin: 4rem 2rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+}/*# sourceMappingURL=App.css.map */

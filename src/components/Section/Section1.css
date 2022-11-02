@@ -1,0 +1,113 @@
+@-webkit-keyframes slide-right {
+  0% {
+    transform: translateX(300%);
+  }
+  30% {
+    transform: translateX(50%);
+  }
+  60% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(300%);
+  }
+  30% {
+    transform: translateX(50%);
+  }
+  60% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.b__Section1 {
+  margin-top: 10%;
+}
+
+.b__Section1-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  overflow: hidden;
+}
+.b__Section1-container .b__Section1-container_illustration {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: slide-right 3500ms ease;
+          animation: slide-right 3500ms ease;
+}
+.b__Section1-container .b__Section1-container_illustration img {
+  transform: scale(0.9);
+}
+.b__Section1-container .b__Section1-container_illustration::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(231deg, 69%, 60%);
+  border-bottom-left-radius: 180px;
+  border-top-left-radius: 180px;
+}
+.b__Section1-container .b__Section1-container_body .b__Text {
+  margin: 1rem 0;
+}
+.b__Section1-container .b__Section1-container_body-btns {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  -webkit-animation: appear 450ms ease;
+          animation: appear 450ms ease;
+}
+
+@media screen and (max-width: 400px) {
+  .b__Section1 {
+    margin-top: 0%;
+  }
+  .b__Section1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .b__Section1-container .b__Section1-container_illustration {
+    position: relative;
+    margin-top: -25%;
+    transform: scale(0.6);
+    -webkit-animation: none;
+            animation: none;
+  }
+  .b__Section1-container .b__Section1-container_illustration img {
+    transform: scale(0.9);
+  }
+  .b__Section1-container .b__Section1-container_illustration::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(231deg, 69%, 60%);
+    border-bottom-left-radius: 180px;
+    border-top-left-radius: 180px;
+  }
+  .b__Section1-container .b__Section1-container_body .b__Text {
+    margin: 1rem 0;
+  }
+  .b__Section1-container .b__Section1-container_body-btns {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    -webkit-animation: appear 450ms ease;
+            animation: appear 450ms ease;
+  }
+}/*# sourceMappingURL=Section1.css.map */
